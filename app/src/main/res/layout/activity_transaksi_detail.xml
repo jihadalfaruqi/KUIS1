@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/customerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pelanggan: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/itemCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerNameTextView"
+        android:text="Kode Barang: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/itemQuantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemCodeTextView"
+        android:text="Jumlah Barang: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/customerTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemQuantityTextView"
+        android:text="Tipe Pelanggan: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerTypeTextView"
+        android:text="Total Harga: "
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Share"
+        android:textSize="16sp" />
+
+</RelativeLayout>

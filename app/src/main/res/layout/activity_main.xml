@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M. Jihad Alfaruqi Kuis 1"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/customerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitleTextView"
+        android:layout_marginTop="16dp"
+        android:hint="Nama Pelanggan"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/customerTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/customerNameEditText"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/goldRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold (Diskon 10%)"/>
+
+        <RadioButton
+            android:id="@+id/silverRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver (Diskon 5%)"/>
+
+        <RadioButton
+            android:id="@+id/regularRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biasa (Diskon 2%)"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/itemCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerTypeRadioGroup"
+        android:layout_marginTop="16dp"
+        android:hint="Kode Barang"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemCodeEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Jumlah Barang"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/processButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:layout_below="@id/itemQuantityEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
